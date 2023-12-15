@@ -1,0 +1,13 @@
+body {
+    background: rgb(184, 209, 195);
+
+    // @apply bg-violet-400;
+}
+
+.test {
+    width: 400px;
+    height: 500px;
+    background: url("../../images/404.jpg");
+    background-size: cover;
+    background-position: center;
+}

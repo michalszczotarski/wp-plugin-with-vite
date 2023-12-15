@@ -23,7 +23,7 @@ trait Resolver
         $this->manifest = json_decode(file_get_contents($path), true);
     }
 
-    private function resolve(string $path): string
+    public function resolve(string $path): string
     {
         $url = '';
 

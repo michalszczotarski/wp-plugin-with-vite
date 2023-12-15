@@ -7,8 +7,9 @@ use App\Traits\Singleton;
 class Vite
 {
     use Singleton;
+    
     /**
-     * @action wp_head 1
+     * @action wp_head 1 || amdin_head
      */
     public function client(): void
     {

@@ -3,7 +3,7 @@ import { defineConfig } from 'vite';
 
 const ROOT = path.resolve('../../../')
 const BASE = __dirname.replace(ROOT, '');
-// const BASE2 = BASE.replace('\\', '/');
+const BASE2 = BASE.replace('\\', '/');
 
 console.log(ROOT);
 console.log(BASE);
@@ -20,7 +20,8 @@ export default defineConfig({
     rollupOptions: {
       input: [
         'src/scripts/scripts.js',
-        'src/styles/styles.scss',
+        'src/styles/scss/styles.scss',
+        'src/styles/css/tailwind.css',
       ],
       output: {
         entryFileNames: '[hash].js',

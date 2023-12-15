@@ -28,8 +28,9 @@ class Assets
     public function admin(): void
     {
         $config = Config::get_instance();
-
-        wp_enqueue_style('admin-style-msz', $this->resolve('styles/styles.scss'), [], $config->get('version'), 'all');
-        wp_enqueue_script('admin-script-msz', $this->resolve('scripts/scripts.js'), [], $config->get('version'), ['strategy' => 'defer']);
+        
+        wp_enqueue_style('itt-1-tailwind-style', $this->resolve('styles/css/tailwind.css'), [], $config->get('version'), 'all');
+        wp_enqueue_style('itt-2-style', $this->resolve('styles/scss/styles.scss'), [], $config->get('version'), 'all');
+        wp_enqueue_script('itt-1-script', $this->resolve('scripts/scripts.js'), [], $config->get('version'), ['strategy' => 'defer']);
     }
 }

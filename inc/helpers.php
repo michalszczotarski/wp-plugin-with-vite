@@ -1,5 +1,7 @@
 <?php
 
+use App\Assets\Assets;
+
 if (!function_exists('currentAdminPageName')) {
     function currentAdminPageName()
     {
@@ -51,5 +53,21 @@ if (!function_exists('show2')) {
         echo "<pre>";
         var_dump($data);
         echo "</pre>";
+    }
+}
+
+if (!function_exists('show2')) {
+    function show2($data)
+    {
+        echo "<pre>";
+        var_dump($data);
+        echo "</pre>";
+    }
+}
+
+if(!function_exists('resolve')) {
+    function resolve($asset)
+    {
+        return Assets::get_instance()->resolve($asset);
     }
 }

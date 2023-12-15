@@ -23,9 +23,9 @@ class App
         if ($config->get('hmr.active')) {
             $vite = Vite::get_instance();
 
-            // add_action('scripts-msz', [$vite, 'client']);
+            add_action('admin_head', [$vite, 'client'], 1);
             
-            // add_filter('script_loader_tag', [$vite, 'module'], 10, 3);
+            add_filter('script_loader_tag', [$vite, 'module'], 10, 3);
 
             add_filter('app/assets/resolver/url', [$vite, 'url'], 10, 2);
         }

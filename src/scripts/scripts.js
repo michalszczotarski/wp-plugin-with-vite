@@ -1,1 +1,5 @@
-console.log("eee dziala 222");
+import bar from "./test.js";
+
+console.log("eee dziala");
+
+bar();

@@ -1,14 +1,19 @@
-<h2>
+<h1 class="text-3xl font-bold underline bg-red-400">
     Strona do konfiguracji vite
 </h2>
 
-<p>
-    tu jakis testowy paragraf 2
+<div class="test">
+</div>
+
+<p class="bg-green-500 text-5xl">
+    tu jakis testowy paragraf 222333
 </p>
 
-{{-- {{ show("FM_PATH: ". FM_PATH) }}
-{{ show("FM_URI: ". FM_URI) }}
-{{ show("FM_ASSETS_PATH: ". FM_ASSETS_PATH) }}
-{{ show("FM_ASSETS_URI: ". FM_ASSETS_URI) }}
-{{ show("FM_RESOURCES_PATH: ". FM_RESOURCES_PATH) }}
-{{ show("FM_RESOURCES_URI: ". FM_RESOURCES_URI) }} --}}
+<div class="test2 text-5xl text-red-800">
+    to jest plik phpowy
+
+</div>
+
+
+
+<img src="/src/images/404.jpg" width="400" height="500" alt="Image" class="logo"/>
