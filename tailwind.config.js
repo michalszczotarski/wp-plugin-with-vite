@@ -7,8 +7,8 @@ for (let i = 6; i <= 20; i++) {
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    './src/views/**/*.php',
     './src/scripts/**/*.js',
+    './src/views/**/*.php'
   ],
   safelist: [
     {

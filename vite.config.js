@@ -1,5 +1,6 @@
 import path from 'path';
 import { defineConfig } from 'vite';
+import autoprefixer from 'autoprefixer';
 
 const ROOT = path.resolve('../../../')
 const BASE = __dirname.replace(ROOT, '');
